@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display Grid</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            grid-gap: 20px; /* Adjust the gap between images */
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+<br><br>
+    <h1>Sales Report</h1>
+
+    <div class="image-grid">
+        <!-- Replace 'image_path1.jpg', 'image_path2.jpg', etc., with the actual paths or URLs of your images -->
+        <img src="img/bdt.jpeg" alt="Image 1">
+        <img src="img/bdt1.png" alt="Image 2">
+        <img src="img/bdt2.png" alt="Image 3">
+        <img src="img/bdt3.png" alt="Image 4">
+        
+    </div>
+
+</body>
+</html>
